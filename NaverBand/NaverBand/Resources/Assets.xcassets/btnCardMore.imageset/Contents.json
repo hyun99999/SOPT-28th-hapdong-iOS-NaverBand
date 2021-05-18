@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "btnCardMore.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "btnCardMore@2x.png"
+    },
+    {
+      "filename" : "btnCardMore@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
