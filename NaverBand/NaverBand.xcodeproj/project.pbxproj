@@ -34,7 +34,6 @@
 		24C9480B26504346008425C3 /* TempConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480A26504346008425C3 /* TempConstant.swift */; };
 		F81ED77C265494BA00D1085E /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81ED77B265494BA00D1085E /* BandSearchVC.swift */; };
 		F81ED77E26549A6900D1085E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81ED77D26549A6900D1085E /* Main.storyboard */; };
-		F87203212655EBCF0049ABB3 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87203202655EBCF0049ABB3 /* RecommendCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +66,6 @@
 		24C9480A26504346008425C3 /* TempConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConstant.swift; sourceTree = "<group>"; };
 		F81ED77B265494BA00D1085E /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
 		F81ED77D26549A6900D1085E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F87203202655EBCF0049ABB3 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +302,6 @@
 				24C948092650433C008425C3 /* TempAPiModel.swift in Sources */,
 				242F1F612654343F009358DA /* TopicCollectionViewCell.swift in Sources */,
 				24C947E5265041DA008425C3 /* SceneDelegate.swift in Sources */,
-				F87203212655EBCF0049ABB3 /* RecommendCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
