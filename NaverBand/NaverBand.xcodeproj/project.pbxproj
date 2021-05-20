@@ -34,6 +34,8 @@
 		24C9480B26504346008425C3 /* TempConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480A26504346008425C3 /* TempConstant.swift */; };
 		F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81272D92655FC3600322BF7 /* BandSearch.storyboard */; };
 		F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DB2655FD3300322BF7 /* BandSearchVC.swift */; };
+		F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DE265667D800322BF7 /* PageDataModel.swift */; };
+		F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		24C9480A26504346008425C3 /* TempConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConstant.swift; sourceTree = "<group>"; };
 		F81272D92655FC3600322BF7 /* BandSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandSearch.storyboard; sourceTree = "<group>"; };
 		F81272DB2655FD3300322BF7 /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
+		F81272DE265667D800322BF7 /* PageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataModel.swift; sourceTree = "<group>"; };
+		F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				24C947FE265042E9008425C3 /* Views */,
 				24C947FD265042E2008425C3 /* Extensions */,
 				24C947FC265042DA008425C3 /* Cells */,
+				F81272DD265667C600322BF7 /* Models */,
 				24C947FB265042CE008425C3 /* APIServices */,
 				24C947FA265042C6008425C3 /* APIModels */,
 			);
@@ -204,10 +209,27 @@
 		24C947FF265042ED008425C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F81272E32656757500322BF7 /* CollectionViewFlowLayoutVC */,
 				24C947E6265041DA008425C3 /* ViewController.swift */,
 				F81272DB2655FD3300322BF7 /* BandSearchVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F81272DD265667C600322BF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F81272DE265667D800322BF7 /* PageDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F81272E32656757500322BF7 /* CollectionViewFlowLayoutVC */ = {
+			isa = PBXGroup;
+			children = (
+				F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayoutVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +313,11 @@
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
 				24C948032650431F008425C3 /* TempExtension.swift in Sources */,
 				242F1F5E26542FDA009358DA /* UIView+Extension.swift in Sources */,
+				F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				24551E6526518AE4001F2856 /* BandCollectionViewCell.swift in Sources */,
 				F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */,
 				24C9480726504331008425C3 /* TempAPIService.swift in Sources */,
+				F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */,
 				24C947E3265041DA008425C3 /* AppDelegate.swift in Sources */,
 				24C9480126504315008425C3 /* TempView.swift in Sources */,
 				242F1F5B26542BD1009358DA /* MissionCollectionViewCell.swift in Sources */,

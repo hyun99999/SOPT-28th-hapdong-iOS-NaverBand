@@ -19,6 +19,7 @@ class TopicCollectionViewCell: UICollectionViewCell {
     func initializeData(_ topic: String?) {
         if let text = topic {
             topicLabel.text = text
+            topicLabel.font = UIFont.systemFont(ofSize: 12)
         }
         topicBackgroundView.layer.cornerRadius = 10
     }

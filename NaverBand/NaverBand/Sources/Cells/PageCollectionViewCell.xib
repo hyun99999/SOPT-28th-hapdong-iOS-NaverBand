@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCollectionViewCell" id="gTV-IL-0wX" customClass="PageCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="436" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -76,7 +76,7 @@
             </constraints>
             <size key="customSize" width="436" height="169"/>
             <connections>
-                <outlet property="detailLabel" destination="bZD-MB-SkI" id="itK-h5-fPf"/>
+                <outlet property="detailLabel" destination="Vh6-yJ-gSU" id="FJ2-Ee-SUc"/>
                 <outlet property="nameLabel" destination="GOX-Xo-Be3" id="FIi-CF-ESF"/>
                 <outlet property="pageImageView" destination="wPJ-bx-R3y" id="7yl-IQ-xz6"/>
                 <outlet property="subscriberLabel" destination="bZD-MB-SkI" id="Qw8-eB-hqw"/>

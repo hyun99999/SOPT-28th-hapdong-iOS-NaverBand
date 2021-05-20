@@ -11,7 +11,7 @@ class BandSearchVC: UIViewController {
     //MARK: - Properties
     private var bandList = [String]()
     private var missionList = [String]()
-    private var pageList = [String]()
+    private var pageList = [PageDataModel]()
     private var topicList = [String]()
     
     //MARK: - @IBOutlet Properties
@@ -30,7 +30,7 @@ class BandSearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setTopicList()
+        setList()
         setCollectionView()
         setUI()
     }
@@ -55,24 +55,56 @@ extension BandSearchVC {
     private func setCollectionView() {
         bandCollectionView.delegate = self
         bandCollectionView.dataSource = self
-        bandCollectionView.register(BandCollectionViewCell.self, forCellWithReuseIdentifier: "BandCollectionViewCell")
+        let bandCell = UINib(nibName: "BandCollectionViewCell", bundle: nil)
+        bandCollectionView.register(bandCell, forCellWithReuseIdentifier: "BandCollectionViewCell")
         
         missionCollectionView.delegate = self
         missionCollectionView.dataSource = self
-        missionCollectionView.register(MissionCollectionViewCell.self, forCellWithReuseIdentifier: "MissionCollectionViewCell")
+        let missionCell = UINib(nibName: "MissionCollectionViewCell", bundle: nil)
+        missionCollectionView.register(missionCell, forCellWithReuseIdentifier: "MissionCollectionViewCell")
         
         pageCollectionView.delegate = self
         pageCollectionView.dataSource = self
-        pageCollectionView.register(PageCollectionViewCell.self, forCellWithReuseIdentifier: "PageCollectionViewCell")
+        let pageCell = UINib(nibName: "PageCollectionViewCell", bundle: nil)
+        pageCollectionView.register(pageCell, forCellWithReuseIdentifier: "PageCollectionViewCell")
         
         topicCollectionView.delegate = self
         topicCollectionView.dataSource = self
-        topicCollectionView.register(TopicCollectionViewCell.self, forCellWithReuseIdentifier: "TopicCollectionViewCell")
+        let topicCell = UINib(nibName: "TopicCollectionViewCell", bundle: nil)
+        topicCollectionView.register(topicCell ,forCellWithReuseIdentifier: "TopicCollectionViewCell")
+    
     }
     
-    private func setTopicList() {
+    private func setList() {
+        self.pageList.append(contentsOf: [
+            PageDataModel(pageImage: "img1",
+                          title: "몽그림",
+                          detail: "그림연습",
+                          subscribe: "27"),
+            PageDataModel(pageImage: "img2",
+                          title: "맛집찾아 삼만리",
+                          detail: "국내맛집, 해외맛집, 우주맛집 찾아가는 날까지... 맛집 기행은 계속 됩니다....",
+                          subscribe: "3902"),
+            PageDataModel(pageImage: "img3",
+                          title: "혼밥레시피",
+                          detail: "혼자 밥잘해먹는 기술입니다.요리도 기술이고 응용이고 예술이고 종합인 시대에 혼밥인생...",
+                          subscribe: "124"),
+            PageDataModel(pageImage: "img1",
+                          title: "몽그림",
+                          detail: "그림연습",
+                          subscribe: "27"),
+            PageDataModel(pageImage: "img2",
+                          title: "맛집찾아 삼만리",
+                          detail: "국내맛집, 해외맛집, 우주맛집 찾아가는 날까지... 맛집 기행은 계속 됩니다....",
+                          subscribe: "3902"),
+            PageDataModel(pageImage: "img3",
+                          title: "혼밥레시피",
+                          detail: "혼자 밥잘해먹는 기술입니다.요리도 기술이고 응용이고 예술이고 종합인 시대에 혼밥인생...",
+                          subscribe: "124")
+        ])
         self.topicList = ["문화/예술","교육/공부","자연/귀농","IT/컴퓨터","반려동물/동물","생활정보/인테리어","방송/연예","맛집/요리","어학/외국어","여행/캠핑","인문/과학", "나이/또래모임"]
     }
+    
 }
 
 //MARK: - UICollection protocol
@@ -83,9 +115,10 @@ extension BandSearchVC: UICollectionViewDelegate {
 extension BandSearchVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == bandCollectionView {
-            return bandList.count
+            return 2
+            
         } else if collectionView == missionCollectionView {
-            return missionList.count
+            return 2
         } else if collectionView == pageCollectionView {
             return pageList.count
         } else {
@@ -95,17 +128,28 @@ extension BandSearchVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == bandCollectionView {
-            return UICollectionViewCell()
+            guard let bandCell = bandCollectionView.dequeueReusableCell(withReuseIdentifier: "BandCollectionViewCell", for: indexPath) as? BandCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            
+            return bandCell
         } else if collectionView == missionCollectionView {
-            return UICollectionViewCell()
+            guard let missionCell = missionCollectionView.dequeueReusableCell(withReuseIdentifier: "MissionCollectionViewCell", for: indexPath) as? MissionCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            
+            return missionCell
         } else if collectionView == pageCollectionView {
-            return UICollectionViewCell()
+            guard let pageCell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: "PageCollectionViewCell", for: indexPath) as? PageCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            pageCell.initializeData(pageList[indexPath.row].pageImage, pageList[indexPath.row].title, pageList[indexPath.row].detail, pageList[indexPath.row].subscribe)
+            
+            return pageCell
         } else {
-            print("topic")
             guard let topicCell = topicCollectionView.dequeueReusableCell(withReuseIdentifier: "TopicCollectionViewCell", for: indexPath) as? TopicCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            print(topicList)
             topicCell.initializeData(topicList[indexPath.row])
             
             return topicCell
@@ -120,10 +164,16 @@ extension BandSearchVC: UICollectionViewDelegateFlowLayout {
         } else if collectionView == missionCollectionView {
             return CGSize(width: 241, height: 202)
         } else if collectionView == pageCollectionView {
-            return CGSize(width: 320, height: 80)
+            return CGSize(width: 320, height: 90)
         } else {
+            guard let topicCell = topicCollectionView.dequeueReusableCell(withReuseIdentifier: "TopicCollectionViewCell", for: indexPath) as? TopicCollectionViewCell else {
+                return CGSize(width: 0, height: 0)
+            }
+            topicCell.topicLabel.text = topicList[indexPath.row]
+            topicCell.topicLabel.sizeToFit()
             
-            return CGSize(width: 200, height: 40)
+            let cellWidth = topicCell.topicLabel.frame.width + 10
+            return CGSize(width: cellWidth, height: 30)
         }
     }
     
@@ -135,9 +185,9 @@ extension BandSearchVC: UICollectionViewDelegateFlowLayout {
         if collectionView == bandCollectionView {
             return 46
         } else if collectionView == missionCollectionView {
-            return 0
+            return 9
         } else if collectionView == pageCollectionView {
-            return 21
+            return 9
         } else {
             return 14
         }
@@ -147,9 +197,9 @@ extension BandSearchVC: UICollectionViewDelegateFlowLayout {
         if collectionView == bandCollectionView {
             return 0
         } else if collectionView == missionCollectionView {
-            return 9
+            return 0
         } else if collectionView == pageCollectionView {
-            return 9
+            return 21
         } else {
             return 12
         }
