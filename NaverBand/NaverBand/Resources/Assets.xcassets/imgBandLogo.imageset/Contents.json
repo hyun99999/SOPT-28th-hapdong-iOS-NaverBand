@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "imgBandLogo.png"
+    },
+    {
+      "scale" : "2x",
+      "filename" : "imgBandLogo@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "imgBandLogo@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
