@@ -31,7 +31,10 @@ class BandCollectionViewCell: UICollectionViewCell {
     }
     
     func initializeData(_ image: String, _ title: String, _ description: String, _ info: String, _ category: String) {
-        self.bandImageView.image = UIImage(named: image)
+        if let image = UIImage(named: image) {
+            self.bandImageView.image = image
+        }
+//        self.bandImageView.image = UIImage(named: image)
         self.titleLabel.text = title
         self.descriptionLabel.text = description
         self.infoLabel.text = info

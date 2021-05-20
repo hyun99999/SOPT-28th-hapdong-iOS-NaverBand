@@ -32,6 +32,10 @@
 		24C9480726504331008425C3 /* TempAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480626504331008425C3 /* TempAPIService.swift */; };
 		24C948092650433C008425C3 /* TempAPiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C948082650433C008425C3 /* TempAPiModel.swift */; };
 		24C9480B26504346008425C3 /* TempConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480A26504346008425C3 /* TempConstant.swift */; };
+		F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81272D92655FC3600322BF7 /* BandSearch.storyboard */; };
+		F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DB2655FD3300322BF7 /* BandSearchVC.swift */; };
+		F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DE265667D800322BF7 /* PageDataModel.swift */; };
+		F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		24C9480626504331008425C3 /* TempAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAPIService.swift; sourceTree = "<group>"; };
 		24C948082650433C008425C3 /* TempAPiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAPiModel.swift; sourceTree = "<group>"; };
 		24C9480A26504346008425C3 /* TempConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConstant.swift; sourceTree = "<group>"; };
+		F81272D92655FC3600322BF7 /* BandSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandSearch.storyboard; sourceTree = "<group>"; };
+		F81272DB2655FD3300322BF7 /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
+		F81272DE265667D800322BF7 /* PageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataModel.swift; sourceTree = "<group>"; };
+		F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 				24C947FE265042E9008425C3 /* Views */,
 				24C947FD265042E2008425C3 /* Extensions */,
 				24C947FC265042DA008425C3 /* Cells */,
+				F81272DD265667C600322BF7 /* Models */,
 				24C947FB265042CE008425C3 /* APIServices */,
 				24C947FA265042C6008425C3 /* APIModels */,
 			);
@@ -131,6 +140,7 @@
 			children = (
 				24C947ED265041DB008425C3 /* LaunchScreen.storyboard */,
 				24C947E8265041DA008425C3 /* Main.storyboard */,
+				F81272D92655FC3600322BF7 /* BandSearch.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -199,9 +209,27 @@
 		24C947FF265042ED008425C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F81272E32656757500322BF7 /* CollectionViewFlowLayoutVC */,
 				24C947E6265041DA008425C3 /* ViewController.swift */,
+				F81272DB2655FD3300322BF7 /* BandSearchVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F81272DD265667C600322BF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F81272DE265667D800322BF7 /* PageDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F81272E32656757500322BF7 /* CollectionViewFlowLayoutVC */ = {
+			isa = PBXGroup;
+			children = (
+				F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayoutVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +298,7 @@
 				24551E5E26517919001F2856 /* MainCollectionViewCell.xib in Resources */,
 				242F1F5C26542BD1009358DA /* MissionCollectionViewCell.xib in Resources */,
 				242F1F622654343F009358DA /* TopicCollectionViewCell.xib in Resources */,
+				F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +313,11 @@
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
 				24C948032650431F008425C3 /* TempExtension.swift in Sources */,
 				242F1F5E26542FDA009358DA /* UIView+Extension.swift in Sources */,
+				F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				24551E6526518AE4001F2856 /* BandCollectionViewCell.swift in Sources */,
+				F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */,
 				24C9480726504331008425C3 /* TempAPIService.swift in Sources */,
+				F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */,
 				24C947E3265041DA008425C3 /* AppDelegate.swift in Sources */,
 				24C9480126504315008425C3 /* TempView.swift in Sources */,
 				242F1F5B26542BD1009358DA /* MissionCollectionViewCell.swift in Sources */,
@@ -372,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				INFOPLIST_FILE = NaverBand/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				INFOPLIST_FILE = NaverBand/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
