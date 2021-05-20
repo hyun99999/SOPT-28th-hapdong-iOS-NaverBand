@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainMoreCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MainMoreCollectionViewCell" reuseIdentifier="MainMoreCollectionViewCell" id="gTV-IL-0wX" customClass="MainMoreCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="434" height="228"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="434" height="228"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-g2-QJo">
-                                <rect key="frame" x="0.0" y="214.5" width="434" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <rect key="frame" x="0.0" y="216" width="434" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

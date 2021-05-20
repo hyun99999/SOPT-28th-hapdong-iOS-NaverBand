@@ -16,13 +16,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       setMainList()
+        setMainList()
         MainCollectionView.delegate=self
         MainCollectionView.dataSource=self
         // Do any additional setup after loading the view.
         let nibName = UINib(nibName: "MainCollectionViewCell", bundle: nil)
         MainCollectionView.register(nibName, forCellWithReuseIdentifier:"MainCollectionViewCell" )
 
+        let nibName2 = UINib(nibName: "MainMoreCollectionViewCell", bundle: nil)
+        MainCollectionView.register(nibName2, forCellWithReuseIdentifier:"MainMoreCollectionViewCell" )
+        
+        
     }
     
 
@@ -55,18 +59,27 @@ extension HomeViewController : UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if(section==0){
-            return 8
+            return 9
         }else{
             return 4
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if(indexPath.section==0 && indexPath.item==8){
+            let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMoreCollectionViewCell", for: indexPath) as! MainMoreCollectionViewCell
+            
+            cell2.initializeData("19개 밴드", "방문 뜸한 밴드 더보기")
+            
+            return cell2
+        }
+        else{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionViewCell", for: indexPath) as! MainCollectionViewCell
         
         cell.initializeData(image :  MainList[indexPath.row].coverName, title : MainList[indexPath.row].title ,isHiddenSquare: MainList[indexPath.row].isHiddenSquare)
         
         return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -89,19 +102,22 @@ extension HomeViewController : UICollectionViewDataSource{
 }
 
 extension HomeViewController : UICollectionViewDelegate{
-    
-    
+
     
 }
 
 extension HomeViewController : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 32
+        return 22
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 12
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="NaverBand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1114"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-A5-Vxs">
-                                <rect key="frame" x="0.0" y="44" width="375" height="1036"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="756"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPS-xW-YOP">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1114"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBandLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-mJ-Zlr">
                                                 <rect key="frame" x="154" y="3" width="67" height="39"/>
@@ -66,14 +66,14 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icGuide" translatesAutoresizingMaskIntoConstraints="NO" id="OxV-tT-070">
-                                                <rect key="frame" x="16" y="1060" width="31" height="31"/>
+                                                <rect key="frame" x="16" y="746" width="31" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="L13-TK-jFV"/>
                                                     <constraint firstAttribute="width" constant="31" id="g9c-q0-vnA"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="밴드 가이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnF-du-Smd">
-                                                <rect key="frame" x="50" y="1068" width="84" height="15"/>
+                                                <rect key="frame" x="50" y="754" width="84" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="84" id="Uh4-qG-1sd"/>
                                                     <constraint firstAttribute="height" constant="15" id="XHG-RH-xyH"/>
@@ -138,6 +138,13 @@
                                                     </connections>
                                                 </collectionReusableView>
                                             </collectionView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icXmark" translatesAutoresizingMaskIntoConstraints="NO" id="blv-v8-5p5">
+                                                <rect key="frame" x="279" y="137" width="30" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Nhl-ji-WUg"/>
+                                                    <constraint firstAttribute="width" constant="30" id="pP3-dc-bmG"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -148,11 +155,13 @@
                                             <constraint firstAttribute="bottom" secondItem="OxV-tT-070" secondAttribute="bottom" constant="23" id="JuV-VL-z0i"/>
                                             <constraint firstItem="FNn-46-uf2" firstAttribute="leading" secondItem="yPS-xW-YOP" secondAttribute="leading" id="RRF-sP-PmD"/>
                                             <constraint firstItem="QQv-Be-zeg" firstAttribute="leading" secondItem="yPS-xW-YOP" secondAttribute="leading" constant="16" id="aXp-w0-JLr"/>
+                                            <constraint firstItem="blv-v8-5p5" firstAttribute="top" secondItem="Sc7-VW-lni" secondAttribute="bottom" constant="12" id="elo-i5-jsj"/>
                                             <constraint firstAttribute="trailing" secondItem="EMo-xs-C1a" secondAttribute="trailing" constant="15" id="fhr-A7-P4M"/>
                                             <constraint firstItem="OxV-tT-070" firstAttribute="leading" secondItem="yPS-xW-YOP" secondAttribute="leading" constant="16" id="ge2-z8-73E"/>
                                             <constraint firstItem="EMo-xs-C1a" firstAttribute="top" secondItem="yPS-xW-YOP" secondAttribute="top" constant="10" id="gvm-L9-pUl"/>
                                             <constraint firstItem="QQv-Be-zeg" firstAttribute="top" secondItem="Sc7-VW-lni" secondAttribute="bottom" constant="10" id="mLi-KK-Bi7"/>
                                             <constraint firstAttribute="trailing" secondItem="cqF-gY-y3x" secondAttribute="trailing" constant="18" id="msO-gz-5Bc"/>
+                                            <constraint firstItem="cqF-gY-y3x" firstAttribute="leading" secondItem="blv-v8-5p5" secondAttribute="trailing" constant="5" id="oIE-SJ-kcn"/>
                                             <constraint firstItem="RL0-mJ-Zlr" firstAttribute="top" secondItem="yPS-xW-YOP" secondAttribute="top" constant="3" id="oSP-fV-PRa"/>
                                             <constraint firstItem="cqF-gY-y3x" firstAttribute="top" secondItem="Sc7-VW-lni" secondAttribute="bottom" constant="10" id="pSY-ND-ehe"/>
                                             <constraint firstItem="RL0-mJ-Zlr" firstAttribute="centerX" secondItem="yPS-xW-YOP" secondAttribute="centerX" id="rW8-F3-Dd5"/>
@@ -183,7 +192,7 @@
                             <constraint firstItem="yPS-xW-YOP" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" priority="250" id="poj-6S-Xzg"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="375" height="1114"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="MainCollectionView" destination="FNn-46-uf2" id="DQh-GQ-aOw"/>
                     </connections>
@@ -198,6 +207,7 @@
         <image name="icGuide" width="31" height="31"/>
         <image name="icProfile" width="26" height="26"/>
         <image name="icSearch" width="27" height="27"/>
+        <image name="icXmark" width="30" height="28"/>
         <image name="imgBandLogo" width="67" height="39"/>
         <image name="imgBanner" width="375" height="81"/>
         <image name="rectangle19" width="293" height="32"/>
