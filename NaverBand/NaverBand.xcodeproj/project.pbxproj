@@ -20,6 +20,8 @@
 		24551E6626518AE4001F2856 /* BandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24551E6426518AE4001F2856 /* BandCollectionViewCell.xib */; };
 		24551E6926519050001F2856 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24551E6726519050001F2856 /* PageCollectionViewCell.swift */; };
 		24551E6A26519050001F2856 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24551E6826519050001F2856 /* PageCollectionViewCell.xib */; };
+		24992D042657B3FF00C63CA0 /* MissionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24992D032657B3FF00C63CA0 /* MissionDataModel.swift */; };
+		24992D062657BB0C00C63CA0 /* BandDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24992D052657BB0C00C63CA0 /* BandDataModel.swift */; };
 		24C947E3265041DA008425C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C947E2265041DA008425C3 /* AppDelegate.swift */; };
 		24C947E5265041DA008425C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C947E4265041DA008425C3 /* SceneDelegate.swift */; };
 		24C947E7265041DA008425C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C947E6265041DA008425C3 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		24551E6426518AE4001F2856 /* BandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BandCollectionViewCell.xib; sourceTree = "<group>"; };
 		24551E6726519050001F2856 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
 		24551E6826519050001F2856 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
+		24992D032657B3FF00C63CA0 /* MissionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDataModel.swift; sourceTree = "<group>"; };
+		24992D052657BB0C00C63CA0 /* BandDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandDataModel.swift; sourceTree = "<group>"; };
 		24C947DF265041DA008425C3 /* NaverBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C947E2265041DA008425C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C947E4265041DA008425C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				F81272DE265667D800322BF7 /* PageDataModel.swift */,
+				24992D032657B3FF00C63CA0 /* MissionDataModel.swift */,
+				24992D052657BB0C00C63CA0 /* BandDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			files = (
 				24C947E7265041DA008425C3 /* ViewController.swift in Sources */,
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
+				24992D042657B3FF00C63CA0 /* MissionDataModel.swift in Sources */,
 				24C948032650431F008425C3 /* TempExtension.swift in Sources */,
 				242F1F5E26542FDA009358DA /* UIView+Extension.swift in Sources */,
 				F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
@@ -319,6 +326,7 @@
 				24C9480726504331008425C3 /* TempAPIService.swift in Sources */,
 				F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */,
 				24C947E3265041DA008425C3 /* AppDelegate.swift in Sources */,
+				24992D062657BB0C00C63CA0 /* BandDataModel.swift in Sources */,
 				24C9480126504315008425C3 /* TempView.swift in Sources */,
 				242F1F5B26542BD1009358DA /* MissionCollectionViewCell.swift in Sources */,
 				24C9480B26504346008425C3 /* TempConstant.swift in Sources */,

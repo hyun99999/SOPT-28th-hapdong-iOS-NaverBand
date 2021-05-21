@@ -9,8 +9,8 @@ import UIKit
 
 class BandSearchVC: UIViewController {
     //MARK: - Properties
-    private var bandList = [String]()
-    private var missionList = [String]()
+    private var bandList = [BandDataModel]()
+    private var missionList = [MissionDataModel]()
     private var pageList = [PageDataModel]()
     private var topicList = [String]()
     
@@ -103,6 +103,16 @@ extension BandSearchVC {
                           subscribe: "124")
         ])
         self.topicList = ["문화/예술","교육/공부","자연/귀농","IT/컴퓨터","반려동물/동물","생활정보/인테리어","방송/연예","맛집/요리","어학/외국어","여행/캠핑","인문/과학", "나이/또래모임"]
+        
+        self.missionList.append(contentsOf: [
+            MissionDataModel(term: "매일 ⋅ 31일간", missionTitle: "하루 한줄 매일 그림", status: "56명이 함께하고 있어요."),
+            MissionDataModel(term: "매일 ⋅ 31일간", missionTitle: "하루 한줄 매일 그림", status: "56명이 함께하고 있어요.")
+        ])
+        
+        self.bandList.append(contentsOf: [
+        BandDataModel(image: "imgDog", title: "리트리버", description: "리트리버 동호회", info: "멤버 1,024 • 레오(남) 14년 11월 서울", category: "반려동물"),
+        BandDataModel(image: "imgGallery", title: "아트 뮤지엄 갤러리 Tour", description: "새롭고, 다른, 살아있는 미술이야기화가의 진정한 모습과 눈에 보이는 미술관을 말하는 미", info: "멤버 902 • ReeMoon 이필준", category: "미술관")
+        ])
     }
     
 }
@@ -115,10 +125,10 @@ extension BandSearchVC: UICollectionViewDelegate {
 extension BandSearchVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == bandCollectionView {
-            return 2
+            return bandList.count
             
         } else if collectionView == missionCollectionView {
-            return 2
+            return missionList.count
         } else if collectionView == pageCollectionView {
             return pageList.count
         } else {
@@ -131,13 +141,20 @@ extension BandSearchVC: UICollectionViewDataSource {
             guard let bandCell = bandCollectionView.dequeueReusableCell(withReuseIdentifier: "BandCollectionViewCell", for: indexPath) as? BandCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            
+            bandCell.initializeData(bandList[indexPath.item].image,
+                                    bandList[indexPath.item].title,
+                                    bandList[indexPath.item].description,
+                                    bandList[indexPath.item].info,
+                                    bandList[indexPath.item].category)
             return bandCell
         } else if collectionView == missionCollectionView {
             guard let missionCell = missionCollectionView.dequeueReusableCell(withReuseIdentifier: "MissionCollectionViewCell", for: indexPath) as? MissionCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            
+            missionCell.intializeData(missionList[indexPath.item].missionTitle,
+                                      missionList[indexPath.item].term,
+                                      missionList[indexPath.item].status)
+          
             return missionCell
         } else if collectionView == pageCollectionView {
             guard let pageCell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: "PageCollectionViewCell", for: indexPath) as? PageCollectionViewCell else {
