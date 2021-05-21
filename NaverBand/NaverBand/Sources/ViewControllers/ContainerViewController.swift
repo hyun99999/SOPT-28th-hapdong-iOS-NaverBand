@@ -39,7 +39,7 @@ class ContainerViewController: UIViewController {
             
         }
     }
-    
+
     private func transitionToHome() {
         self.homeButton.setImage(UIImage(named: "icHomeActivated"), for: .normal)
         self.searchButton.setImage(UIImage(named: "icSearch"), for: .normal)
@@ -75,4 +75,5 @@ class ContainerViewController: UIViewController {
             
         }
     }
+    
 }
