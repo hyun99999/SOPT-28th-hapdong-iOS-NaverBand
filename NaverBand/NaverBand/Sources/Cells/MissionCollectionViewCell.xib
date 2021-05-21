@@ -4,13 +4,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MissionCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MissionCollectionViewCell" id="gTV-IL-0wX" customClass="MissionCollectionViewCell" customModule="NaverBand" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="466" height="319"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -20,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-JR-cDt">
                         <rect key="frame" x="0.0" y="0.0" width="466" height="319"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tx3-qT-2MG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMissionDraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tx3-qT-2MG">
                                 <rect key="frame" x="0.0" y="0.0" width="466" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="131" id="y4C-NH-e2a"/>
@@ -63,36 +62,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-DB-d2Z">
-                                <rect key="frame" x="0.0" y="0.0" width="43" height="22"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG8-UX-zRU">
-                                        <rect key="frame" x="8" y="5" width="27" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.3411764705882353" green="0.72941176470588232" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDl-sH-aPu">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="24"/>
+                                <color key="backgroundColor" red="0.3411764706" green="0.72941176470000002" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstItem="NG8-UX-zRU" firstAttribute="leading" secondItem="ybp-DB-d2Z" secondAttribute="leading" constant="8" id="HjP-Ub-EBf"/>
-                                    <constraint firstAttribute="trailing" secondItem="NG8-UX-zRU" secondAttribute="trailing" constant="8" id="ffn-Mm-t6h"/>
-                                    <constraint firstItem="NG8-UX-zRU" firstAttribute="top" secondItem="ybp-DB-d2Z" secondAttribute="top" constant="5" id="rAI-yv-22c"/>
-                                    <constraint firstAttribute="bottom" secondItem="NG8-UX-zRU" secondAttribute="bottom" constant="5" id="zGg-hB-8bf"/>
+                                    <constraint firstAttribute="height" constant="24" id="seh-Fm-IuI"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="5" maxX="8" maxY="5"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jwP-9b-hxV" firstAttribute="top" secondItem="zMZ-JR-cDt" secondAttribute="top" constant="69" id="21w-Vq-POP"/>
                             <constraint firstItem="Tx3-qT-2MG" firstAttribute="top" secondItem="zMZ-JR-cDt" secondAttribute="top" id="7v2-bI-F3B"/>
                             <constraint firstItem="jwP-9b-hxV" firstAttribute="centerX" secondItem="zMZ-JR-cDt" secondAttribute="centerX" id="8qm-6O-0fZ"/>
                             <constraint firstAttribute="trailing" secondItem="Tx3-qT-2MG" secondAttribute="trailing" id="Mdg-zy-qYW"/>
-                            <constraint firstItem="ybp-DB-d2Z" firstAttribute="leading" secondItem="zMZ-JR-cDt" secondAttribute="leading" id="cSp-fW-7vN"/>
-                            <constraint firstItem="ybp-DB-d2Z" firstAttribute="top" secondItem="zMZ-JR-cDt" secondAttribute="top" id="j7A-fo-u5x"/>
                             <constraint firstItem="Tx3-qT-2MG" firstAttribute="leading" secondItem="zMZ-JR-cDt" secondAttribute="leading" id="k41-am-VsQ"/>
                             <constraint firstItem="i2G-e0-kzW" firstAttribute="centerX" secondItem="zMZ-JR-cDt" secondAttribute="centerX" id="ltf-NY-BTW"/>
                             <constraint firstItem="i2G-e0-kzW" firstAttribute="top" secondItem="Tx3-qT-2MG" secondAttribute="bottom" constant="16" id="nHW-0K-wDx"/>
+                            <constraint firstItem="mDl-sH-aPu" firstAttribute="top" secondItem="zMZ-JR-cDt" secondAttribute="top" id="oC5-md-BLJ"/>
+                            <constraint firstItem="mDl-sH-aPu" firstAttribute="leading" secondItem="zMZ-JR-cDt" secondAttribute="leading" id="x9p-ld-kCQ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -110,16 +106,13 @@
                 <outlet property="missionTitleLabel" destination="jwP-9b-hxV" id="Jqo-ue-IbC"/>
                 <outlet property="statusLabel" destination="EUu-1t-rc0" id="Sop-bN-oEh"/>
                 <outlet property="superView" destination="zMZ-JR-cDt" id="7ts-fI-1IU"/>
-                <outlet property="termBackgroundView" destination="ybp-DB-d2Z" id="5QJ-Lb-c7d"/>
-                <outlet property="termLabel" destination="NG8-UX-zRU" id="QqR-KG-5be"/>
+                <outlet property="termButton" destination="mDl-sH-aPu" id="UJ1-Qo-M2H"/>
             </connections>
             <point key="canvasLocation" x="433.33333333333337" y="169.75446428571428"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="imgMissionDraw" width="241" height="131"/>
     </resources>
 </document>

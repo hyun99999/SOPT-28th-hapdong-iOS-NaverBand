@@ -11,8 +11,7 @@ class MissionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var superView: UIView!
     // term은 초록색 바탕에 잇는 글씨
-    @IBOutlet weak var termBackgroundView: UIView!
-    @IBOutlet weak var termLabel: UILabel!
+    @IBOutlet weak var termButton: UIButton!
     
     @IBOutlet weak var missionImageView: UIImageView!
     
@@ -23,15 +22,18 @@ class MissionCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.superView.layer.cornerRadius = 15
+   
         // Initialization code
     }
 
-    func intializeData(_ image: String, _ missionTitle: String, _ term: String, _ status: String) {
-        self.missionImageView.image = UIImage(named: image)
-        self.termLabel.text = term
+    func intializeData(_ missionTitle: String, _ term: String, _ status: String) {
+ 
         self.missionTitleLabel.text = missionTitle
+        self.termButton.setTitle(term, for: .normal)
         self.statusLabel.text = status
-        self.termBackgroundView.round(corners: [.topLeft, .bottomRight], cornerRadius: 15)
+       
+        self.superView.layer.cornerRadius = 15
+        self.termButton.layer.cornerRadius = 7
+        self.termButton.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMaxYCorner)
     }
 }
