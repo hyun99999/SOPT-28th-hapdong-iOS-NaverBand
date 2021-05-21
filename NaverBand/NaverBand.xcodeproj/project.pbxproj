@@ -34,10 +34,16 @@
 		24C9480726504331008425C3 /* TempAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480626504331008425C3 /* TempAPIService.swift */; };
 		24C948092650433C008425C3 /* TempAPiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C948082650433C008425C3 /* TempAPiModel.swift */; };
 		24C9480B26504346008425C3 /* TempConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480A26504346008425C3 /* TempConstant.swift */; };
+
+		71D3B7192655F1DE004C6DCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B7182655F1DE004C6DCD /* HomeViewController.swift */; };
+		71D3B71B2655F204004C6DCD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3B71A2655F204004C6DCD /* Home.storyboard */; };
+		71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71C265602BE004C6DCD /* MainDataModel.swift */; };
+		71D3B71F26567C5C004C6DCD /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */; };
 		F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81272D92655FC3600322BF7 /* BandSearch.storyboard */; };
 		F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DB2655FD3300322BF7 /* BandSearchVC.swift */; };
 		F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DE265667D800322BF7 /* PageDataModel.swift */; };
 		F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,10 +76,16 @@
 		24C9480626504331008425C3 /* TempAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAPIService.swift; sourceTree = "<group>"; };
 		24C948082650433C008425C3 /* TempAPiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAPiModel.swift; sourceTree = "<group>"; };
 		24C9480A26504346008425C3 /* TempConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConstant.swift; sourceTree = "<group>"; };
+
+		71D3B7182655F1DE004C6DCD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		71D3B71A2655F204004C6DCD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		71D3B71C265602BE004C6DCD /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
+		71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
 		F81272D92655FC3600322BF7 /* BandSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandSearch.storyboard; sourceTree = "<group>"; };
 		F81272DB2655FD3300322BF7 /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
 		F81272DE265667D800322BF7 /* PageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataModel.swift; sourceTree = "<group>"; };
 		F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,7 @@
 				F81272DD265667C600322BF7 /* Models */,
 				24C947FB265042CE008425C3 /* APIServices */,
 				24C947FA265042C6008425C3 /* APIModels */,
+				71D3B71C265602BE004C6DCD /* MainDataModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,7 +157,11 @@
 			children = (
 				24C947ED265041DB008425C3 /* LaunchScreen.storyboard */,
 				24C947E8265041DA008425C3 /* Main.storyboard */,
+
+				71D3B71A2655F204004C6DCD /* Home.storyboard */,
+
 				F81272D92655FC3600322BF7 /* BandSearch.storyboard */,
+
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -213,7 +230,12 @@
 		24C947FF265042ED008425C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+
+				71D3B7182655F1DE004C6DCD /* HomeViewController.swift */,
+				71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */,
+
 				F81272E32656757500322BF7 /* CollectionViewFlowLayoutVC */,
+
 				24C947E6265041DA008425C3 /* ViewController.swift */,
 				F81272DB2655FD3300322BF7 /* BandSearchVC.swift */,
 			);
@@ -296,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24551E6226517B54001F2856 /* MainMoreCollectionViewCell.xib in Resources */,
+				71D3B71B2655F204004C6DCD /* Home.storyboard in Resources */,
 				24C947EF265041DB008425C3 /* LaunchScreen.storyboard in Resources */,
 				24C947EC265041DB008425C3 /* Assets.xcassets in Resources */,
 				24551E6626518AE4001F2856 /* BandCollectionViewCell.xib in Resources */,
@@ -315,10 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */,
 				24C947E7265041DA008425C3 /* ViewController.swift in Sources */,
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
 				24992D042657B3FF00C63CA0 /* MissionDataModel.swift in Sources */,
 				24C948032650431F008425C3 /* TempExtension.swift in Sources */,
+				71D3B7192655F1DE004C6DCD /* HomeViewController.swift in Sources */,
+				71D3B71F26567C5C004C6DCD /* CollectionViewHeader.swift in Sources */,
 				242F1F5E26542FDA009358DA /* UIView+Extension.swift in Sources */,
 				F81272E12656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				24551E6526518AE4001F2856 /* BandCollectionViewCell.swift in Sources */,

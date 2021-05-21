@@ -1,21 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "icProfile.png",
-
       "scale" : "1x",
+      "filename" : "mainImg3.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "icProfile@2x.png",
-      "scale" : "2x",
-      "idiom" : "universal"
-    },
-    {
-      "scale" : "3x",
       "idiom" : "universal",
-
-      "filename" : "icProfile@3x.png"
+      "filename" : "mainImg3@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "mainImg3@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
