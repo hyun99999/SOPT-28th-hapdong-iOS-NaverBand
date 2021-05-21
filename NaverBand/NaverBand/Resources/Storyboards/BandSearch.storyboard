@@ -39,50 +39,18 @@
                                     <constraint firstAttribute="trailing" secondItem="30x-Ka-4HO" secondAttribute="trailing" constant="15" id="llC-2W-RCa"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ecB-jE-yon">
-                                <rect key="frame" x="10" y="1418" width="394" height="48"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-w8-ljf">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icHomeInactivated"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-vg-QBD">
-                                        <rect key="frame" x="69" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icFeedInactivated"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvf-Cc-c0H">
-                                        <rect key="frame" x="138.5" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icSearchActivated"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP8-3X-ffc">
-                                        <rect key="frame" x="207.5" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icAlertInactivated"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN2-5u-QSq">
-                                        <rect key="frame" x="277" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icChatInactivated"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kz-rT-8r6">
-                                        <rect key="frame" x="346" y="0.0" width="48" height="48"/>
-                                        <state key="normal" image="icListInactivated"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="tCa-5E-oOs"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-Go-9mS">
-                                <rect key="frame" x="0.0" y="1417.5" width="414" height="0.5"/>
+                                <rect key="frame" x="0.0" y="1465.5" width="414" height="0.5"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="D0X-0O-7tg"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-ja-lxL">
-                                <rect key="frame" x="0.0" y="83" width="414" height="1334.5"/>
+                                <rect key="frame" x="0.0" y="83" width="414" height="1382.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-nM-mGo">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1262"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-nM-mGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1383"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-dQ-MH6">
                                                 <rect key="frame" x="16" y="22" width="41.5" height="20.5"/>
@@ -266,16 +234,13 @@
                         <constraints>
                             <constraint firstItem="CtX-ja-lxL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6N6-bp-QuT"/>
                             <constraint firstItem="CtX-ja-lxL" firstAttribute="top" secondItem="vfa-mb-nNc" secondAttribute="bottom" id="BJK-rR-xbc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ZyW-Go-9mS" secondAttribute="bottom" id="CbA-jA-c0A"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vfa-mb-nNc" secondAttribute="trailing" id="Cbm-yg-Oh6"/>
                             <constraint firstItem="ZyW-Go-9mS" firstAttribute="top" secondItem="CtX-ja-lxL" secondAttribute="bottom" id="E7s-jb-UM2"/>
                             <constraint firstItem="vfa-mb-nNc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PnC-Cg-LM6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CtX-ja-lxL" secondAttribute="trailing" id="QEs-5a-54b"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ecB-jE-yon" secondAttribute="trailing" constant="10" id="Rwr-Et-IEE"/>
-                            <constraint firstItem="ecB-jE-yon" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="b8H-4j-Psa"/>
                             <constraint firstItem="ZyW-Go-9mS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jF7-E4-zxF"/>
-                            <constraint firstItem="ecB-jE-yon" firstAttribute="top" secondItem="ZyW-Go-9mS" secondAttribute="bottom" id="mUI-vu-bfk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZyW-Go-9mS" secondAttribute="trailing" id="nHz-LE-m2B"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ecB-jE-yon" secondAttribute="bottom" id="nhU-TP-wJQ"/>
                             <constraint firstItem="vfa-mb-nNc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sFi-w5-Ax9"/>
                         </constraints>
                     </view>
@@ -298,13 +263,7 @@
     </scenes>
     <resources>
         <image name="btnViewall" width="66" height="20"/>
-        <image name="icAlertInactivated" width="48" height="48"/>
-        <image name="icChatInactivated" width="48" height="48"/>
-        <image name="icFeedInactivated" width="48" height="48"/>
-        <image name="icHomeInactivated" width="48" height="48"/>
-        <image name="icListInactivated" width="48" height="48"/>
         <image name="icProfile" width="26" height="26"/>
-        <image name="icSearchActivated" width="48" height="48"/>
         <image name="imgBandLogo" width="67" height="39"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
