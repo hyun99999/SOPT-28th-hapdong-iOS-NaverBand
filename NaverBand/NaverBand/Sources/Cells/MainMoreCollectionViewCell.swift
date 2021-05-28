@@ -15,7 +15,7 @@ class MainMoreCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func initializeData(_ num: String, _ title: String) {
+    func initializeData(num: String, title: String) {
         numLabel.text = num
         titleLabel.text = title
     }
