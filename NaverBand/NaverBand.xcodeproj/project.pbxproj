@@ -40,6 +40,7 @@
 		71D3B71B2655F204004C6DCD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3B71A2655F204004C6DCD /* Home.storyboard */; };
 		71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71C265602BE004C6DCD /* MainDataModel.swift */; };
 		71D3B71F26567C5C004C6DCD /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */; };
+		71FD2E1C2658D5E600B0ACDD /* MainMoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD2E1B2658D5E600B0ACDD /* MainMoreDataModel.swift */; };
 		F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81272D92655FC3600322BF7 /* BandSearch.storyboard */; };
 		F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DB2655FD3300322BF7 /* BandSearchVC.swift */; };
 		F81272DF265667D800322BF7 /* PageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DE265667D800322BF7 /* PageDataModel.swift */; };
@@ -82,6 +83,7 @@
 		71D3B71A2655F204004C6DCD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		71D3B71C265602BE004C6DCD /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
 		71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		71FD2E1B2658D5E600B0ACDD /* MainMoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMoreDataModel.swift; sourceTree = "<group>"; };
 		F81272D92655FC3600322BF7 /* BandSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandSearch.storyboard; sourceTree = "<group>"; };
 		F81272DB2655FD3300322BF7 /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
 		F81272DE265667D800322BF7 /* PageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataModel.swift; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 				F81272DD265667C600322BF7 /* Models */,
 				24C947FB265042CE008425C3 /* APIServices */,
 				24C947FA265042C6008425C3 /* APIModels */,
-				71D3B71C265602BE004C6DCD /* MainDataModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -241,6 +242,8 @@
 		F81272DD265667C600322BF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				71D3B71C265602BE004C6DCD /* MainDataModel.swift */,
+				71FD2E1B2658D5E600B0ACDD /* MainMoreDataModel.swift */,
 				F81272DE265667D800322BF7 /* PageDataModel.swift */,
 				24992D032657B3FF00C63CA0 /* MissionDataModel.swift */,
 				24992D052657BB0C00C63CA0 /* BandDataModel.swift */,
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */,
+				71FD2E1C2658D5E600B0ACDD /* MainMoreDataModel.swift in Sources */,
 				24C947E7265041DA008425C3 /* ViewController.swift in Sources */,
 				2466B01E2657ED080041CD75 /* ContainerViewController.swift in Sources */,
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
