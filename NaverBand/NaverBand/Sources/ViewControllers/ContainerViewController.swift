@@ -42,7 +42,7 @@ class ContainerViewController: UIViewController {
 
     private func transitionToHome() {
         self.homeButton.setImage(UIImage(named: "icHomeActivated"), for: .normal)
-        self.searchButton.setImage(UIImage(named: "icSearch"), for: .normal)
+        self.searchButton.setImage(UIImage(named: "icSearchInactivated"), for: .normal)
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         
         guard let vc = storyboard.instantiateViewController(identifier: "HomeViewController") as? HomeViewController else {

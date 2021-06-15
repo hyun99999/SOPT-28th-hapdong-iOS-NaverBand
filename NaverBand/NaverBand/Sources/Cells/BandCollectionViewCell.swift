@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BandCollectionViewCell: UICollectionViewCell {
 
@@ -31,10 +32,13 @@ class BandCollectionViewCell: UICollectionViewCell {
     }
     
     func initializeData(_ image: String, _ title: String, _ description: String, _ info: String, _ category: String) {
-        if let image = UIImage(named: image) {
-            self.bandImageView.image = image
+//        if let image = UIImage(named: image) {
+//            self.bandImageView.image = image
+//        }
+        if let url = URL(string: image) {
+            self.bandImageView.kf.setImage(with: url)
         }
-//        self.bandImageView.image = UIImage(named: image)
+        bandImageView.contentMode = .scaleAspectFill
         self.titleLabel.text = title
         self.descriptionLabel.text = description
         self.infoLabel.text = info

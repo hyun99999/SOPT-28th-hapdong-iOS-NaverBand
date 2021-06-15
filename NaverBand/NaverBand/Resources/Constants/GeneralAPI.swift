@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct GeneralAPI {
+    static let baseURL = "http://3.139.195.175:5000"
+}

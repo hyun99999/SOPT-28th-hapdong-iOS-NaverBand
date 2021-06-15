@@ -96,7 +96,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sO2-vi-np2">
-                                                <rect key="frame" x="16" y="377" width="398" height="202"/>
+                                                <rect key="frame" x="0.0" y="377" width="414" height="202"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="202" id="4v8-SJ-8Na"/>
@@ -129,7 +129,7 @@
                                                 <state key="normal" image="btnViewall"/>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lPa-Nz-xBn">
-                                                <rect key="frame" x="16" y="648.5" width="398" height="332"/>
+                                                <rect key="frame" x="0.0" y="648.5" width="414" height="332"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="332" id="q8j-DB-7O4"/>
@@ -192,9 +192,9 @@
                                             <constraint firstItem="joZ-tY-AyV" firstAttribute="top" secondItem="AGA-1z-jug" secondAttribute="bottom" constant="32" id="3fr-gg-Eim"/>
                                             <constraint firstAttribute="trailing" secondItem="3CB-uM-DVa" secondAttribute="trailing" constant="10" id="8K1-YA-waz"/>
                                             <constraint firstItem="joZ-tY-AyV" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" constant="16" id="8hW-WC-hq4"/>
-                                            <constraint firstItem="lPa-Nz-xBn" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" constant="16" id="A9N-UC-bh8"/>
+                                            <constraint firstItem="lPa-Nz-xBn" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" id="A9N-UC-bh8"/>
                                             <constraint firstItem="AGA-1z-jug" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" constant="16" id="BNe-U4-bSZ"/>
-                                            <constraint firstItem="sO2-vi-np2" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" constant="16" id="HYe-u5-7an"/>
+                                            <constraint firstItem="sO2-vi-np2" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" id="HYe-u5-7an"/>
                                             <constraint firstItem="mj2-fr-Ita" firstAttribute="leading" secondItem="QWZ-nM-mGo" secondAttribute="leading" constant="17" id="MAV-Ei-das"/>
                                             <constraint firstItem="AGA-1z-jug" firstAttribute="top" secondItem="M8D-dQ-MH6" secondAttribute="bottom" constant="18" id="MiJ-1B-yeX"/>
                                             <constraint firstItem="3CB-uM-DVa" firstAttribute="top" secondItem="QWZ-nM-mGo" secondAttribute="top" constant="22" id="NEl-G2-s41"/>
