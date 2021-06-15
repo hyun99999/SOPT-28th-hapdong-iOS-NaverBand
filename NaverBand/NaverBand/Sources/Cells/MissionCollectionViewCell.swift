@@ -26,8 +26,11 @@ class MissionCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    func intializeData(_ missionTitle: String, _ term: String, _ status: String) {
- 
+    func intializeData(_ missionTitle: String, _ term: String, _ status: String, _ image: String) {
+        if let url = URL(string: image) {
+            missionImageView.kf.setImage(with: url)
+        }
+        missionImageView.contentMode = .scaleAspectFill
         self.missionTitleLabel.text = missionTitle
         self.termButton.setTitle(term, for: .normal)
         self.statusLabel.text = status

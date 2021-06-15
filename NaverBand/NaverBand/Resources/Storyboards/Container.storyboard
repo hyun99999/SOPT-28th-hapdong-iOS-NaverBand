@@ -31,23 +31,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUZ-qx-d7g">
-                                        <rect key="frame" x="73.5" y="0.0" width="48" height="48"/>
+                                        <rect key="frame" x="69" y="0.0" width="48" height="48"/>
                                         <state key="normal" image="icFeedInactivated"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G51-ek-zah">
-                                        <rect key="frame" x="147" y="10.5" width="27" height="27"/>
-                                        <state key="normal" image="icSearch"/>
+                                        <rect key="frame" x="138.5" y="0.0" width="48" height="48"/>
+                                        <state key="normal" image="icSearchInactivated"/>
                                         <state key="selected" image="icSearchActivated"/>
                                         <connections>
                                             <action selector="touchSearchButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pl7-G7-6Ur"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPE-fc-qe1">
-                                        <rect key="frame" x="199" y="0.0" width="48" height="48"/>
+                                        <rect key="frame" x="207.5" y="0.0" width="48" height="48"/>
                                         <state key="normal" image="icAlertInactivated"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJV-nA-Lq3">
-                                        <rect key="frame" x="272.5" y="0.0" width="48" height="48"/>
+                                        <rect key="frame" x="277" y="0.0" width="48" height="48"/>
                                         <state key="normal" image="icChatInactivated"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhV-qm-B2m">
@@ -87,8 +87,8 @@
         <image name="icHomeActivated" width="48" height="48"/>
         <image name="icHomeInactivated" width="48" height="48"/>
         <image name="icListInactivated" width="48" height="48"/>
-        <image name="icSearch" width="27" height="27"/>
         <image name="icSearchActivated" width="48" height="48"/>
+        <image name="icSearchInactivated" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
