@@ -49,6 +49,9 @@ class HomeViewController: UIViewController {
         ])
         MainList3.append(contentsOf: [MainMoreDataModel(label: "19개 밴드", title: "방문 뜸한 밴드 더보기")])
     }
+    func hi(){
+        print("하이하이")
+    }
 
 }
 

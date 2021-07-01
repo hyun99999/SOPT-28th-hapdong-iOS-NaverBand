@@ -35,8 +35,9 @@
 		24C9480B26504346008425C3 /* GeneralAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9480A26504346008425C3 /* GeneralAPI.swift */; };
 		71D3B7192655F1DE004C6DCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B7182655F1DE004C6DCD /* HomeViewController.swift */; };
 		71D3B71B2655F204004C6DCD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3B71A2655F204004C6DCD /* Home.storyboard */; };
-		71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71C265602BE004C6DCD /* MainDataModel.swift */; };
 		71D3B71F26567C5C004C6DCD /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */; };
+		71FEB4DA268D55A7005B6DD4 /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEB4D9268D55A7005B6DD4 /* MainDataModel.swift */; };
+		71FEB4DE268D55D9005B6DD4 /* MainMoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEB4DD268D55D9005B6DD4 /* MainMoreDataModel.swift */; };
 		DCE9B8253264039DA081EE99 /* Pods_NaverBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35690176F09946F7E7012C6F /* Pods_NaverBand.framework */; };
 		F81272DA2655FC3600322BF7 /* BandSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81272D92655FC3600322BF7 /* BandSearch.storyboard */; };
 		F81272DC2655FD3300322BF7 /* BandSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81272DB2655FD3300322BF7 /* BandSearchVC.swift */; };
@@ -84,9 +85,9 @@
 		35690176F09946F7E7012C6F /* Pods_NaverBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D3B7182655F1DE004C6DCD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		71D3B71A2655F204004C6DCD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		71D3B71C265602BE004C6DCD /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
 		71D3B71E26567C5C004C6DCD /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
-		71FD2E1B2658D5E600B0ACDD /* MainMoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMoreDataModel.swift; sourceTree = "<group>"; };
+		71FEB4D9268D55A7005B6DD4 /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
+		71FEB4DD268D55D9005B6DD4 /* MainMoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMoreDataModel.swift; sourceTree = "<group>"; };
 		F81272D92655FC3600322BF7 /* BandSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandSearch.storyboard; sourceTree = "<group>"; };
 		F81272DB2655FD3300322BF7 /* BandSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSearchVC.swift; sourceTree = "<group>"; };
 		F81272E02656739C00322BF7 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 				24C947E0265041DA008425C3 /* Products */,
 				D17FFF9FCE9FBF504A944DCD /* Pods */,
 				95E23E9BDE1C9A5F45499C68 /* Frameworks */,
+				71FEB4D8268D54F0005B6DD4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +256,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		71FEB4D8268D54F0005B6DD4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		95E23E9BDE1C9A5F45499C68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +289,8 @@
 				F88702A0266CD43800CBBDDA /* BandCategoriesDatModel.swift */,
 				F88702A2266CD6B900CBBDDA /* BandPagesDataModel.swift */,
 				F88702A4266CD87B00CBBDDA /* BandMissionDataModel.swift */,
+				71FEB4D9268D55A7005B6DD4 /* MainDataModel.swift */,
+				71FEB4DD268D55D9005B6DD4 /* MainMoreDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -416,11 +427,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88702A1266CD43800CBBDDA /* BandCategoriesDatModel.swift in Sources */,
+				71FEB4DE268D55D9005B6DD4 /* MainMoreDataModel.swift in Sources */,
 				F8870299266CC98B00CBBDDA /* BandService.swift in Sources */,
-				71D3B71D265602BE004C6DCD /* MainDataModel.swift in Sources */,
-				71FD2E1C2658D5E600B0ACDD /* MainMoreDataModel.swift in Sources */,
 				24C947E7265041DA008425C3 /* ViewController.swift in Sources */,
 				F88702A5266CD87B00CBBDDA /* BandMissionDataModel.swift in Sources */,
+				71FEB4DA268D55A7005B6DD4 /* MainDataModel.swift in Sources */,
 				2466B01E2657ED080041CD75 /* ContainerViewController.swift in Sources */,
 				24C9480526504325008425C3 /* TempCell.swift in Sources */,
 				24C948032650431F008425C3 /* TempExtension.swift in Sources */,
