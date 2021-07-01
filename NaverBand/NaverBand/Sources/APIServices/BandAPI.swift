@@ -30,6 +30,7 @@ class BandAPI {
         }
     }
     
+    
     func getBanners(completion: @escaping (String) -> ()) {
         BandAPI.provider.request(.banners) { response in
             switch response {
